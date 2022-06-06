@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Clone Repo') {
       steps {
-        git(url: 'https://github.com/OranGeNaL/DD.Backend', branch: 'main')
+        git(url: 'https://github.com/OranGeNaL/DD.Backend', branch: 'main', credentialsId: '1')
       }
     }
 
